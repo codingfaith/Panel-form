@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-wrapper"><img src="img/plus94.png" alt="company-logo" id="logo"></div>
+        <form id="form">
+            <h2>Panel recruitment form</h2>
+            <input type="text" name="name" id="name" placeholder="Enter your full name..." required>
+            <input type="email" name="email" id="email" placeholder="Enter your email address..." required>
+            <input type="text" name="phone" id="phone" placeholder="Enter your preferred contact number..." required>
+            <select name="race" id="race" required>
+                <option value="">Please select your race</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="coloured">Coloured</option>
+                <option value="indian-asian">Indian/Asian</option>
+            </select>
+            <select name="gender" id="gender" required>
+                <option value="">Please select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">None of the above</option>
+            </select>
+            <select name="province" id="province" required>
+                <option value="">Please select your province</option>
+                <option value="gauteng">Gauteng</option>
+                <option value="limpopo">Limpopo</option>
+                <option value="free-state">Free State</option>
+                <option value="north-west">North West</option>
+                <option value="mpumalanga">Mpumalanga</option>
+                <option value="eastern-cape">Eastern Cape</option>
+                <option value="western-cape">Western Cape</option>
+                <option value="northern-cape">Northern Cape</option> 
+                <option value="kwazulu-natal">KwaZulu-Natal</option>
+            </select>
+            <select name="year" id="year" required>
+                <option value="">Please select your year of birth</option>
+            </select>
+            <select name="education" id="education" required>
+                <option value="">Select your highest level of education</option>
+                <option value="some-primary">Some primary</option>
+                <option value="primary-complete">Primary completed</option>
+                <option value="some-high-school">Some high school</option>
+                <option value="high-school-complete">High school completed</option>
+                <option value="certificate">Technikon certificate/diploma</option>
+                <option value="university">Some university</option>
+                <option value="university-complete">University completed</option>
+                <option value="post-grad">Post graduate qualification</option>
+            </select>
+            <select name="language" id="language" required>
+                <option value="">Please select your home language</option>
+                <option value="sepedi">Sepedi</option>
+                <option value="isizulu">IsiZulu</option>
+                <option value="english">English</option>
+                <option value="siswati">SiSwati</option>
+                <option value="sesotho">SeSotho</option>
+                <option value="isixhosa">IsiXhosa</option>
+                <option value="afrikaans">Afrikaans</option>
+                <option value="setswana">SeTswana</option>
+                <option value="isindebele">IsiNdebele</option>
+                <option value="tshivhenda">TshiVhenda</option>
+                <option value="xitsonga">XiTsonga/Shangaan</option>
+                <option value="other">None of the above</option>
+            </select>
+            <select name="work" id="work" required>
+                <option value="">Please select your work status</option>
+                <option value="retired">Retired</option>
+                <option value="student">Student</option>
+                <option value="housewife">Housewife</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="work-fulltime">Work full-time</option>
+                <option value="work-parttime">Work part-time</option>
+                <option value="self-employed">Self-employed</option>
+            </select>
+            <select name="income" id="income" required>
+                <option value="">Please select your income range</option>
+                <option value="0">R  0 - R 2 999</option>
+                <option value="1">R  3 000 - R 5 999</option>
+                <option value="2">R  6 000 - R 11 999</option>
+                <option value="3">R 12 000 - R 19 999</option>
+                <option value="4">R 20 000 - R 29 999</option>
+                <option value="5">R 30 000 - R 39 999</option>
+                <option value="6">R 40 000 - R 49 999</option>
+                <option value="7">R 50 000+</option>
+            </select>
+            <h4>Which of the following do you have or apply to your household ?</h4>
+            <div class="checkboxes">
+                <input type="checkbox" id="geyser" name="geyser" value="geyser">
+                <label for="geyser">Hot running water from a geyser</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="computer" name="computer" value="computer">
+                <label for="computer">Computer - Desktop/laptop</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="stove" name="stove" value="stove">
+                <label for="stove">Electric stove</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="helpers" name="helpers" value="helpers">
+                <label for="helpers">No domestic workers or household helpers in household</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="radio" name="radio" value="radio">
+                <label for="radio">0 or 1 radio set in the household</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="toilet" name="toilet" value="toilet">
+                <label for="toilet">Flush toilet in/outside the house</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="vehicle" name="vehicle" value="vehicle">
+                <label for="vehicle">Motor vehicle in household</label>
+            </div><hr>
+            <div class="checkboxes">
+                <input type="checkbox" id="washing-machine" name="washing-machine" value="washing-machine">
+                <label for="washing-machine">Washing machine</label>
+            </div><hr>
+        </form>
+    </div>
+    <script src="index.js"></script>    
+</body>
+</html>
+
+<!--
+    Email Address
+    Cell Phone Number
+    Province of Residence
+    Race
+    Gender
+    City of Residence
+    Surburb of Residence
+    Highest Education Level 
+
+    Date of Birth or Age at the time of research participation
+    Preferred Language of Communication
+    Education Background
+-->

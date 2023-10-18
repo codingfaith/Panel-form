@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #00f700;
+    background: #000000;
+    font-family: 'Inter', sans-serif;
+}
+div.container {
+    position: relative;
+}
+div.img-wrapper {
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background: #000000;
+}
+img#logo {
+    width: 100px; 
+}
+form {
+    width: 320px;
+    margin: auto;
+    padding: 0.5em;
+    margin-top: 2px;
+    box-shadow: 1px 1px 3px 1px #00f700;
+    
+}
+select, 
+input[type="text"],
+input[type="email"]
+{
+    width: 100%;
+    border: none;
+    outline: none; 
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: medium;
+    margin-bottom: 0.5em;
+    background: rgba(255,255,255,0.3);  
+}
+input {
+    color: #ffffff;
+}
+select {
+    color: #00f700; 
+}
+option {
+    color: #00f700;
+    background: #000000; 
+}
+select option:checked {
+    color: #000000; 
+    background: #ffffff;
+}
+h2 {
+    text-align: center;
+}
+div.checkboxes {
+    gap: 0.5em;
+    display: flex;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #00f700;
+}
+hr {
+    border-bottom: 1px solid #7c7c7c;
+}
