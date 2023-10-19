@@ -13,11 +13,12 @@ const submitBtn = document.getElementById("submit")
 const consentCheckbox = document.getElementById("consent");
 
 submitBtn.addEventListener("click",(e)=>{
-    if (!consentCheckbox.checked) {
-        alert("Please agree to the terms and conditions.")
-        e.preventDefault() // Prevent the form from submitting
-    }
     e.preventDefault()
-    thanksDiv.style.display = "block"
-    form.style.display = "none"   
-})
+    if (consentCheckbox.checked) {
+        thanksDiv.style.display = "block"
+        form.style.display = "none"  
+    }else {
+        alert("Please agree to the terms and conditions.")
+    }
+})  
+   
