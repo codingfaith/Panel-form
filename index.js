@@ -10,8 +10,13 @@ for (let year = 2023; year >= 1923; year--) {
 const form = document.getElementById("form")
 const thanksDiv = document.getElementById("thanks")
 const submitBtn = document.getElementById("submit")
+const consentCheckbox = document.getElementById("consent");
 
 submitBtn.addEventListener("click",(e)=>{
+    if (!consentCheckbox.checked) {
+        alert("Please agree to the terms and conditions.")
+        e.preventDefault() // Prevent the form from submitting
+    }
     e.preventDefault()
     thanksDiv.style.display = "block"
     form.style.display = "none"   
