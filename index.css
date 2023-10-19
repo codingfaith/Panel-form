@@ -90,6 +90,7 @@ button {
 div.thanks h4 {
     margin-top: 80px;
 }
+a,
 div.thanks p {
     font-style: italic;
 }
@@ -107,4 +108,7 @@ div.thanks {
     text-align: center;
     background: #000000;
     box-shadow: 1px 1px 3px 1px #00f700;  
+}
+a {
+    color: #00f700;
 }
